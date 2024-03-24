@@ -1,0 +1,16 @@
+{
+  "comments": [
+    {
+      "comment_id": 1,
+      "comment_name": "did i not mentioned that you can leave comments",
+      "comment_text": "when no i did",
+      "post_id": 1
+    },
+    {
+      "comment_id": 2,
+      "comment_name": "it is very cool isn't it?",
+      "comment_text": "yes it is",
+      "post_id": 1
+    }
+  ]
+}

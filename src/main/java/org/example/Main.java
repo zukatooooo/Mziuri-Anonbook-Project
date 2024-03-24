@@ -6,6 +6,7 @@ import org.apache.catalina.core.StandardContext;
 import org.apache.catalina.startup.Tomcat;
 import org.apache.catalina.webresources.DirResourceSet;
 import org.apache.catalina.webresources.StandardRoot;
+import org.example.service.CommentReaderService;
 import org.example.service.PostReaderService;
 
 import java.io.File;
@@ -14,6 +15,9 @@ public class Main {
     public static void main(String[] args) throws LifecycleException {
         PostReaderService postReaderService = PostReaderService.instance();
         postReaderService.addPostFromJsonFile("src/main/resources/post.json");
+
+        CommentReaderService commentReaderService = CommentReaderService.instance();
+        commentReaderService.addCommentFromJsonFile("src/main/resources/comment.json");
 
         Tomcat tomcat = new Tomcat();
         tomcat.enableNaming();

@@ -6,6 +6,7 @@
 
     <persistence-unit name="my-unit" transaction-type="RESOURCE_LOCAL">
         <class>org.example.model.Post</class>
+        <class>org.example.model.Comment</class>
         <exclude-unlisted-classes>false</exclude-unlisted-classes>
         <properties>
             <property name="jakarta.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver" />

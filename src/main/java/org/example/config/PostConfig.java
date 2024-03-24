@@ -4,6 +4,8 @@ import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import org.example.model.Post;
 
+import java.util.Arrays;
+
 public class PostConfig {
     private Post[] posts;
 
@@ -17,5 +19,12 @@ public class PostConfig {
 
     public Post[] getPosts() {
         return posts;
+    }
+
+    @Override
+    public String toString() {
+        return "PostConfig{" +
+                "posts=" + Arrays.toString(posts) +
+                '}';
     }
 }
