@@ -29,13 +29,6 @@ public class Post {
         this.image = image;
     }
 
-    @JsonCreator
-    public Post(@JsonProperty("post_id")int id, @JsonProperty("post_name")String name, @JsonProperty("post_text")String text) {
-        this.id = id;
-        this.name = name;
-        this.text = text;
-    }
-
     public Post() {
     }
 

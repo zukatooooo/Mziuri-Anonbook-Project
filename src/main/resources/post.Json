@@ -1,0 +1,22 @@
+{
+  "posts": [
+    {
+      "post_id": 1,
+      "post_name": "Hello",
+      "post_text": "This is the first post",
+      "post_image": null
+    },
+    {
+      "post_id": 2,
+      "post_name": "Here we go again",
+      "post_text": "This is the second post",
+      "post_image": "https://pbs.twimg.com/media/D63aUl-XkAIv9gL.png"
+    },
+    {
+      "post_id": 3,
+      "post_name": "Here we go again 4",
+      "post_text": "This is the post",
+      "post_image": "https://pbs.twimg.com/media/D63aUl-XkAIv9gL.png"
+    }
+  ]
+}
