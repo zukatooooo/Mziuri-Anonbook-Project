@@ -6,7 +6,7 @@ import jakarta.persistence.EntityManagerFactory;
 import jakarta.persistence.EntityTransaction;
 import jakarta.persistence.Persistence;
 import org.example.model.Post;
-import org.example.model.PostConfig;
+import org.example.config.PostConfig;
 
 import java.io.File;
 import java.io.IOException;
