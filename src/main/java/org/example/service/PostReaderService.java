@@ -30,7 +30,7 @@ public class PostReaderService {
             ObjectMapper objectMapper = new ObjectMapper();
             PostConfig postConfig = objectMapper.readValue(jsonFile, PostConfig.class);
 
-            EntityManagerFactory entityManagerFactory = Persistence.createEntityManagerFactory("chemi-unit");
+            EntityManagerFactory entityManagerFactory = Persistence.createEntityManagerFactory("my-unit");
             EntityManager entityManager = entityManagerFactory.createEntityManager();
             EntityTransaction entityTransaction = entityManager.getTransaction();
 
@@ -48,8 +48,8 @@ public class PostReaderService {
             entityManager.close();
             entityManagerFactory.close();
 
-        } catch (Exception e) {
-            e.printStackTrace();
+        } catch (IOException e) {
+            throw new RuntimeException(e);
         }
     }
 }
